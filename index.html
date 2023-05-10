@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cronómetro</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/cronometro.css">
+  </head>
+
+  <body>
+
+    <div class="tablero">
+
+        <section class="superior">
+
+            <div class="faulLocal faul">
+                <h2>Fauls</h2>
+                <div class="faulLocal__contador cajitas">
+                    <h1 data-faullocal="">0</h1>
+                </div>
+            </div>
+    
+            <div class="timer">
+                <div class="tiempo" id="tiempo">00:00:00.000</div>
+                <h1>Tiempo</h1>
+            </div>
+    
+            <div class="faulVisit faul faul">
+                <h2>Fauls</h2>
+                <div class="faulVisit__contador cajitas">
+                    <h1 data-faulVisit="">0</h1>
+                </div>
+        </section>
+
+        <section class="mid">
+
+            <div class="scoreLocal score">
+                <h2>Local</h2>
+                <div class="cajitas">
+                    <h1 data-scoreLocal="">0</h1>
+                </div>
+            </div>
+
+            <div class="periodo">
+                <div class="cajitas">
+                    <h1>1</h1>
+                </div>
+                <h2>Periodo</h2>
+            </div>
+
+            <div class="scoreVisit score">
+                <h2>Visitante</h2>
+                <div class="cajitas">
+                    <h1>0</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="controlls">
+
+            <div class="controlLocal control">
+                <div class="btn" data-local-uno="">
+                    <h2>+1</h2>
+                </div>
+                <div class="btn" data-local-dos="">
+                    <h2>+2</h2>
+                </div>
+                <div class="btn" data-local-tres="">
+                    <h2>+3</h2>
+                </div>
+                <div class="btn" data-local-faul>
+                    <h2>F</h2>
+                </div>
+            </div>
+
+            <div class="controlTimer">
+                <div class="botones-contenedor">
+                    <div class="btn" onclick="iniciar()">
+                    <i class="fas fa-play"></i>
+                    </div>
+                    <div class="btn" onclick="pausar()">
+                    <i class="fas fa-pause"></i>
+                    </div>
+                    <div class="btn" onclick="reiniciar()">
+                    <i class="fas fa-undo-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controlesVisit">
+                <div class="btn" data-visit-uno>
+                    <h2>+1</h2>
+                </div>
+                <div class="btn" data-visit-dos>
+                    <h2>+2</h2>
+                </div>
+                <div class="btn" data-vist-tres>
+                    <h2>+3</h2>
+                </div>
+                <div class="btn" data-vist-faul>
+                    <h2>F</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+        
+   </div> 
+    
+
+    
+
+   <script src="./js/cronometro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+  * {
+          transition: all 0.3s;
+      }
+
+      .tablero {
+          width: 85%;
+          margin: 2rem auto;
+          display: flex;
+          flex-direction: column;
+          font-family: calibri;
+          color: white;
+          background: url(../img/istockphoto-1292810415-170667a.jpg) center / cover no-repeat;
+      }
+
+      .tiempo {
+          border-radius: 30px;
+          background: black;
+          padding: 30px 0;
+          border: 5px solid white;
+          width: 90%;
+          margin: 10px auto;
+      }
+
+      .botones-contenedor {
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .btn {
+          cursor: pointer;
+          display: inline-block;
+          font-size: 60%;
+          padding: 20px;
+      }
+
+      section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .faul{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .timer{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .score, .periodo{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cajitas{
+        width: 65%;
+        background: #000;
+        text-align: center;
+        border: 5px solid white;
+        border-radius: 10px;
+      }
